@@ -1,0 +1,21 @@
+{
+  "name": "unionfind-ts",
+  "version": "1.0.0",
+  "description": "union find forest(disjoint set)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\"}' mocha --require ts-node/register test/**/*.test.ts"
+  },
+  "author": "arlechann",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "@types/chai": "*",
+    "@types/mocha": "*",
+    "@types/node": "*",
+    "chai": "*",
+    "mocha": "*",
+    "ts-node": "*",
+    "typescript": "*"
+  }
+}
