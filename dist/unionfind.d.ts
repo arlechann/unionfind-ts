@@ -5,7 +5,7 @@ export declare type UnionFind = {
     tree_sizes: number[];
 };
 export declare const UnionFind: {
-    new(n: number): UnionFind;
+    create(n: number): UnionFind;
     size(uf: UnionFind): number;
     unite(uf: UnionFind, a: number, b: number): boolean;
     are_united(uf: UnionFind, a: number, b: number): boolean;

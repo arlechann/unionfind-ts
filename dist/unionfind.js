@@ -1,5 +1,5 @@
 export const UnionFind = {
-    new(n) {
+    create(n) {
         return {
             size: n,
             parents: [...Array(n)].map((v, i) => i),

@@ -6,7 +6,7 @@ export type UnionFind = {
 }
 
 export const UnionFind = {
-  new(n: number): UnionFind {
+  create(n: number): UnionFind {
     return {
       size: n,
       parents: [...Array(n)].map((v, i) => i),

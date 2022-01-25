@@ -5,7 +5,7 @@ import { UnionFind } from '../src/unionfind'
 describe('UnionFind', () => {
   context('new', () => {
     it('size が 0 の場合', () => {
-      const uf = UnionFind.new(0);
+      const uf = UnionFind.create(0);
       assert.deepStrictEqual(uf, {
         size: 0,
         parents: [],
@@ -15,7 +15,7 @@ describe('UnionFind', () => {
     });
 
     it('size が 正整数の場合', () => {
-      const uf = UnionFind.new(4);
+      const uf = UnionFind.create(4);
       assert.deepStrictEqual(uf, {
         size: 4,
         parents: [0, 1, 2, 3],
