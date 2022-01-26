@@ -34,7 +34,7 @@ export const UnionFind = {
     return true;
   },
 
-  are_united(uf: UnionFind, a: number, b: number): boolean {
+  areUnited(uf: UnionFind, a: number, b: number): boolean {
     return UnionFind.root(uf, a) === UnionFind.root(uf, b);
   },
 
